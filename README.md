@@ -49,6 +49,8 @@ The https://00f.net/2019/04/07/compiling-to-webassembly-with-llvm-and-clang/ sug
 with /opt/homebrew/Cellar/llvm/19.1.7/ and at the point where it suggests https://github.com/jedisct1/libclang_rt.builtins-wasm32.a
 the link suggests "zig" instead of this tool stack for post 2023 development.
 
+    zig cc --target=wasm32-wasi -shared -o dist/chip.wasm src/main.c  # seems to work
+
 
 ## Examples
 
