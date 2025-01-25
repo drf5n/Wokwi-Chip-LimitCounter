@@ -33,7 +33,7 @@ https://wokwi.com/projects/407612178959256577
 ## Bugs -- 
 
 Currently I don't know how to compile a wasm.  I was following the instructions in the Makefile, but those are aimed at an old
-distribution of clang and wasi-libc per:
+distribution of clang and wasi-libc ifollowing https://github.com/wokwi/inverter-chip/blob/main/Makefile per:
 
 ```
 # Copied from https://github.com/wokwi/inverter-chip/blob/main/Makefile 
@@ -45,7 +45,9 @@ distribution of clang and wasi-libc per:
 #  
 ```
 
-The https://00f.net/2019/04/07/compiling-to-webassembly-with-llvm-and-clang/ suggestion doesn't work with /opt/homebrew/Cellar/llvm/19.1.7/ and suggests "zig" instead of the tool stack.
+The https://00f.net/2019/04/07/compiling-to-webassembly-with-llvm-and-clang/ suggestion doesn't work
+with /opt/homebrew/Cellar/llvm/19.1.7/ and at the point where it suggests https://github.com/jedisct1/libclang_rt.builtins-wasm32.a
+the link suggests "zig" instead of this tool stack for post 2023 development.
 
 
 ## Examples
