@@ -68,7 +68,7 @@ the link suggests "zig" instead of this tool stack for post 2023 development.
 # notes on making a Wokwi custom chip work with Github repository dependency
 To get the Wokwi build script working to build the necessary chip.zip file for distribution with a release so Wokwi can pick it up
 
-1) enable the repository settings for workflow permissions to be read-write
+1) enable the repository Settings/Actions/General/WorkflowPermissions/ for workflow permissions to be read-write
 2) make sure the .github/workflows/build.yaml is in the repository
 3) commit
 4) make a vN.n.n tag: `git tag -a "v1.0.1" -m "build.yaml"`
