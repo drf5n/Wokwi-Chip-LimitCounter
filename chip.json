@@ -1,0 +1,33 @@
+{
+  "name": "limitCounter",
+  "author": "David Forrest",
+  "pins": [
+    "NO_HI",
+    "NC_HI",
+    "NC_LO",
+    "NO_LO",
+    "",
+    "COUNT",
+    "UP",
+    "GND",
+    "VCC"
+  ],
+  "controls":[
+    {
+      "id": "lower",
+      "label": "lowerLimit",
+      "type": "range",
+      "min": -100,
+      "max": 100,
+      "step": 1
+    },
+        {
+      "id": "upper",
+      "label": "upperLimit",
+      "type": "range",
+      "min": 0,
+      "max": 200,
+      "step": 1
+    }
+  ]
+}
