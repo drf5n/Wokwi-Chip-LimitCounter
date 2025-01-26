@@ -32,8 +32,9 @@ dist:
 		mkdir -p dist
 
 $(TARGET): dist $(SOURCES) src/wokwi-api.h
-	  #clang --target=wasm32-unknown-wasi --sysroot $(SYSROOT) -nostartfiles -Wl,--import-memory -Wl,--export-table -Wl,--no-entry -Werror -o $(TARGET) $(SOURCES)
-	  zig cc --target=wasm32-wasi -shared -o $(TARGET) $(SOURCES)
+	  clang --target=wasm32-unknown-wasi --sysroot $(SYSROOT) -nostartfiles -Wl,--import-memory -Wl,--export-table -Wl,--no-entry -Werror -o $(TARGET) $(SOURCES)
+	  #zig cc --target=wasm32-wasi -shared -o $(TARGET) $(SOURCES)
+	  #zig cc -Wall --target=wasm32-wasi -mexec-model=reactor -o $(TARGET) $(SOURCES)
 
 dist/chip.json: dist chip.json
 	  cp chip.json dist
