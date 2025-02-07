@@ -8,7 +8,7 @@ A counter with limit switch outputs custom-chip for Wokwi
 To use this chip in your project, include it as a dependency in your `diagram.json` file:
 
 ```json
-"dependencies": { "chip-limit-counter": "github:drf5n/Wokwi-Chip-LimitCounter@1.0.0" }
+"dependencies": { "chip-limit-counter": "github:drf5n/Wokwi-Chip-LimitCounter@1.0.4" }
 ```
 
 Then, add the chip to your circuit by adding a `chip-limit-counter` item to the `parts` section of `diagram.json`:
@@ -33,7 +33,7 @@ https://wokwi.com/projects/407612178959256577
 ## Bugs -- 
 
 Currently I don't know how to compile a wasm.  I was following the instructions in the Makefile, but those are aimed at an old
-distribution of clang and wasi-libc ifollowing https://github.com/wokwi/inverter-chip/blob/main/Makefile per:
+distribution of clang and wasi-libc following https://github.com/wokwi/inverter-chip/blob/main/Makefile per:
 
 ```
 # Copied from https://github.com/wokwi/inverter-chip/blob/main/Makefile 
@@ -52,9 +52,10 @@ the link suggests "zig" instead of this tool stack for post 2023 development.
     zig cc --target=wasm32-wasi -shared -o dist/chip.wasm src/main.c  # seems to work
 
 
+
 ## Examples
 
-* [LimitChip Demo -- github](https://wokwi.com/projects/411487509400518657)
+* [LimitChip Demo -- github](https://wokwi.com/projects/421091681118829569)
 * [LimitChip Demo -- tabbed](https://wokwi.com/projects/407612178959256577)
 
 ## See also:

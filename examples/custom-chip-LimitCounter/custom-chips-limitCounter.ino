@@ -4,6 +4,8 @@
   built from https://wokwi.com/projects/406335146945275905
   built from https://wokwi.com/projects/327458636089524820
 
+ See https://github.com/drf5n/Wokwi-Chip-LimitCounter
+
   Discord at https://discord.com/channels/787627282663211009/954892209486966825/1282855086418300938
   
   Start the simulation. 
